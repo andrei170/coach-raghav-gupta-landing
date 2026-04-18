@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coach Raghav Gupta — The Inside Investor Club</title>
+<meta name="description" content="Join 2,000+ Indians generating monthly income from crypto options. Trained by Coach Raghav Gupta. 9+ years. 20,000+ students. Author of Rupees to Bitcoin.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#05090a;--bg-2:#0a1014;--surface:#0f1519;--line:rgba(46,213,115,.1);
+--text:#eaf3ef;--muted:#8a9a92;--accent:#26d07c;--accent-2:#4fe39a;--glow:#12b368;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-30%;left:50%;transform:translateX(-50%);width:80%;height:70%;background:radial-gradient(circle,rgba(38,208,124,.08) 0%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,9,10,.92);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.03em;color:var(--text)}
+.logo span{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#05090a;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(38,208,124,.1);border:1px solid rgba(38,208,124,.3);border-radius:20px;font-size:12px;font-weight:600;color:var(--accent-2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:24px}
+h1{font-size:clamp(40px,5.8vw,72px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:24px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(30px,4vw,46px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:14px}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:70px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:720px}
+.cta-primary{display:inline-block;padding:18px 38px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#05090a;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 10px 40px rgba(38,208,124,.25);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.vsl-box{max-width:900px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(38,208,124,.08) 0%,transparent 60%)}
+.vsl-box::after{content:'[ VSL PLACEHOLDER · 12-15 MIN ]';position:absolute;bottom:20px;right:20px;font-family:monospace;font-size:11px;color:var(--muted);letter-spacing:.1em}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(38,208,124,.15);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;z-index:1}
+.play-btn svg{width:32px;height:32px;fill:var(--accent-2);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-size:40px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(38,208,124,.4);transform:translateY(-4px)}
+.card-num{font-size:14px;color:var(--accent-2);font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(38,208,124,.08) 0%,rgba(18,179,104,.04) 100%);border:1px solid rgba(38,208,124,.2);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:680px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--accent)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--accent) 0%,var(--glow) 100%);color:#05090a;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#0a1014 0%,#121a1f 100%);border:1px solid rgba(38,208,124,.25);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:48px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.offer-price small{font-size:18px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);display:block;margin-top:8px}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'✓';color:var(--accent-2);font-weight:700;flex-shrink:0}
+.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center}
+.bio-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.testi{padding:32px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px}
+.testi-quote{font-size:15px;color:var(--text);margin-bottom:20px;line-height:1.7}
+.testi-attr{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.testi-attr strong{color:var(--accent-2);font-weight:600}
+.book-block{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center;padding:60px;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:24px;margin-top:40px}
+.book-cover{aspect-ratio:2/3;background:linear-gradient(135deg,#0d1418 0%,#1a2428 100%);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center}
+.book-cover-inner{color:var(--accent-2);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px}
+.book-cover-title{color:var(--text);font-size:26px;font-weight:800;line-height:1.2;letter-spacing:-.02em}
+.book-cover-sub{color:var(--muted);font-size:13px;margin-top:12px}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--accent-2);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:400px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){
+.problem-grid,.pillar-grid,.stats,.testimonial-grid{grid-template-columns:1fr}
+.offer-grid,.bio,.book-block{grid-template-columns:1fr}
+.lead-capture,.offer-box,.book-block{padding:40px 24px}
+.form-row{flex-direction:column}
+section{padding:70px 0}
+.stats{gap:20px}
+}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav-inner">
+<div class="logo">COACH <span>RAGHAV GUPTA</span></div>
+<a href="#join" class="nav-cta">Join The Club</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="eyebrow reveal">THE INSIDE INVESTOR CLUB</div>
+<h1 class="reveal">A Second Income From Crypto Options.<br>Built Alongside <em>Your Day Job.</em></h1>
+<p class="reveal">2,000+ paying members. 20,000+ traders trained. 9+ years of coaching. The framework that works whether Bitcoin pumps, dumps, or goes sideways.</p>
+<div class="vsl-box reveal">
+<div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+</div>
+<a href="#join" class="cta-primary reveal">See If It's A Fit →</a>
+<div class="stats reveal">
+<div><div class="stat-num">2,000+</div><div class="stat-label">Club Members</div></div>
+<div><div class="stat-num">20K+</div><div class="stat-label">Trained Via Webinar</div></div>
+<div><div class="stat-num">9+ Yrs</div><div class="stat-label">Coaching Experience</div></div>
+<div><div class="stat-num">10+</div><div class="stat-label">Countries</div></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">WHY MOST TRADERS LOSE</div>
+<h2 class="reveal">If You've Lost Money In Crypto,<br>It Was Probably One Of These Three Reasons</h2>
+<p class="reveal" style="font-size:18px">It almost never comes down to the market. It comes down to the system.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">KILLER 01</div><h3>Chasing Telegram Signals</h3><p>If you need someone else to tell you when to enter and when to exit, you're not trading. You're outsourcing. The day the group disappears, so does your edge.</p></div>
+<div class="card reveal"><div class="card-num">KILLER 02</div><h3>No Risk Management</h3><p>Most retail traders size every position the same. One bad week ends the account. The Inside Investor Club drills position sizing before anyone places a real trade.</p></div>
+<div class="card reveal"><div class="card-num">KILLER 03</div><h3>Skipping Fundamentals</h3><p>Delta, Theta, Vega sound like Greek because nobody actually teaches them. Trade options without understanding them and you're the exit liquidity.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE FRAMEWORK</div>
+<h2 class="reveal">The 3-Pillar System<br>Used By 2,000+ Members</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">PILLAR 1</div><h3>Fundamentals First</h3><p>Blockchain, options mechanics, the Greeks in plain English. Nobody places a real trade until pillar one is locked.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 2</div><h3>Risk Management</h3><p>Position sizing rules. Stop loss discipline. Portfolio hedging. The part every Telegram guru skips and the part that keeps members in the game.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 3</div><h3>Strangle Execution</h3><p>One trade that makes money whether Bitcoin pumps, dumps, or moves sideways. Start with under ₹1,000 capital. Scale when the habits are built.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE BOOK</div>
+<div class="book-block reveal">
+<div class="book-cover">
+<div class="book-cover-inner">Published 2025</div>
+<div class="book-cover-title">Rupees<br>To Bitcoin</div>
+<div class="book-cover-sub">Options Trading Made Simple</div>
+</div>
+<div>
+<h2>The Book Page 42 Is Doing The Work</h2>
+<p style="font-size:17px;margin-top:16px">I wrote Rupees to Bitcoin for the Indian market. Blockchain fundamentals, wallets, exchanges, and the Strangle Strategy members use every week. Available on Amazon India.</p>
+<p style="margin-top:16px">Inside Investor Club members get the full book built into the curriculum, plus live sessions where we apply every chapter to real market conditions.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE MASTERCLASS</div>
+<h2>The 2-Hour Crypto Options Masterclass</h2>
+<p style="margin:0 auto">Hindi or English. The complete Strangle Strategy walkthrough. Registration covers the Zoom slot and the recording.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox — registration confirmed.')">
+<input type="email" placeholder="Enter your email" required>
+<button type="submit">Register →</button>
+</form>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">MEMBER STORIES</div>
+<h2 class="reveal">What 2,000+ Members Are Saying</h2>
+<div class="testimonial-grid">
+<div class="testi reveal"><div class="testi-quote">"5 to 6% monthly returns consistently. I kept my IT job. The Club paid for itself in the first 2 months."</div><div class="testi-attr"><strong>Priya M.</strong> · Noida, Project Manager</div></div>
+<div class="testi reveal"><div class="testi-quote">"18% profit in one month on my first serious deployment. I had been in 4 Telegram groups before. Muted all of them."</div><div class="testi-attr"><strong>Arjun S.</strong> · Bangalore, Software Engineer</div></div>
+<div class="testi reveal"><div class="testi-quote">"I read the book, joined the webinar, then the Club. Nine years of experience shows in how Raghav teaches risk. Nothing else I bought compares."</div><div class="testi-attr"><strong>Rahul D.</strong> · Dubai, Business Owner (NRI)</div></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section id="join">
+<div class="container">
+<div class="eyebrow reveal">THE PROGRAM</div>
+<h2 class="reveal">Inside Investor Club</h2>
+<div class="offer-box reveal">
+<div class="offer-grid">
+<div>
+<div class="offer-price">Application<small>&nbsp;Investment discussed on the discovery call · Payment plans available</small></div>
+<p style="margin-top:20px">Lifetime access to the mentorship Indian traders have been quietly building an income inside for 9 years. Pricing sits in a range most working professionals can fit into a monthly plan.</p>
+<ul class="feature-list">
+<li>8-module options curriculum (Fundamentals, Greeks, Strangle, Straddle, Iron Condor, Hedging, Portfolio Construction)</li>
+<li>Weekly live Q&A calls (Hindi + English sessions)</li>
+<li>Private community (Telegram + Discord) with 2,000+ members</li>
+<li>Rupees to Bitcoin book built into the curriculum</li>
+<li>Trade journals and performance tracking</li>
+<li>All future updates included — lifetime means lifetime</li>
+<li>Direct access to Coach Raghav during weekly calls</li>
+</ul>
+</div>
+<div>
+<div style="background:rgba(38,208,124,.08);border:1px solid rgba(38,208,124,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">PROOF</div>
+<h3 style="margin-bottom:12px">Priya. Noida. ₹40K In Month 5.</h3>
+<p style="margin:0 auto 24px">Project manager, full-time job, 90-minute commute. Trades 15 minutes a day on her phone during lunch.</p>
+<a href="#" class="cta-primary" style="width:100%">Book A Discovery Call →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="bio">
+<div class="bio-img reveal">[Raghav's headshot]</div>
+<div class="reveal">
+<div class="eyebrow">ABOUT RAGHAV</div>
+<h2>9 Years. 2 Bull Markets. 2 Bear Markets.</h2>
+<p style="font-size:17px;margin-top:20px">I've been training traders since 2016. Over 20,000 people have sat through my webinars. 10,000+ have gone through my mentorship programs. 2,000+ are active members of the Inside Investor Club.</p>
+<p style="margin-top:16px">I'm based in Pune. I'm the author of Rupees to Bitcoin, available on Amazon India. I teach in Hindi and English. My focus is not on making you rich overnight — it's on keeping you in the game long enough to compound.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How much capital do I need to start?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>You can execute your first Strangle trade with ₹500 to ₹1,000. Members scale capital only after completing the fundamentals modules and paper trading for 4 weeks.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How much time per day does this take?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Most working members trade 15 to 30 minutes a day. The curriculum is designed for professionals who cannot stare at charts all day.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Is crypto options trading legal in India?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Yes. Crypto trading is legal in India. Taxation rules have been clarified under the latest budget. Members receive an updated tax guide inside the Club.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Do you teach in Hindi or English?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Both. Weekly Q&A calls rotate between Hindi and English. All curriculum modules are available in both languages. NRI members typically attend the English sessions.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What's different from a Telegram signal group?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Everything. The Club does not give you signals. It teaches you to read the market and size your own positions. Members graduate from the Club not needing me.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Who is this NOT for?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>People looking for daily calls, shitcoin tips, or 10x overnight returns. The Club is for people who want a structured second income over years, not a lottery ticket.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="text-align:center">
+<div class="container">
+<h2 class="reveal">A Second Income, Built Properly</h2>
+<p class="reveal" style="margin:20px auto 40px">Applications are reviewed within 48 hours. If you're a fit, we'll schedule a discovery call.</p>
+<a href="#join" class="cta-primary reveal">Apply Now →</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>© 2026 Coach Raghav Gupta. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
